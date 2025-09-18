@@ -5,3 +5,8 @@ out/
 .DS_Store
 .history/
 *.log
+node_modules/
+.next/
+out/
+.DS_Store
+.history/
