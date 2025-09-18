@@ -1,8 +1,12 @@
+"use client"
+
+import { useState } from 'react'
 import { Search } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 
 export default function Header() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   return (
     <>
       {/* Top banner */}
@@ -41,10 +45,10 @@ export default function Header() {
 
       {/* Main header */}
       <header className="bg-white border-b shadow-sm px-4 py-4">
-        <div className="max-w-7xl mx-auto">
+        <div className="w-full">
           <div className="flex items-center justify-between">
             {/* Logo and title */}
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 -ml-6 sm:-ml-8">
               <div className="flex items-center gap-3">
                 <img
                   src="https://ext.same-assets.com/4131792006/439561661.png"
@@ -63,7 +67,7 @@ export default function Header() {
               </div>
             </div>
 
-            {/* Navigation */}
+            {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center gap-6">
               <a href="#" className="text-gray-700 hover:text-red-600 font-medium">Tin tức</a>
               <a href="#" className="text-gray-700 hover:text-red-600 font-medium">Hoạt động Đảng bộ</a>
@@ -78,8 +82,47 @@ export default function Header() {
                 <Search className="absolute right-3 top-2.5 h-4 w-4 text-gray-400" />
               </div>
             </nav>
+
+            {/* Mobile menu button */}
+            <div className="md:hidden">
+              <Button
+                variant="outline"
+                className="px-3 py-2"
+                onClick={() => setIsMobileMenuOpen((v) => !v)}
+                aria-expanded={isMobileMenuOpen}
+                aria-controls="mobile-menu"
+                aria-label="Toggle navigation menu"
+              >
+                {/* Simple hamburger icon */}
+                <div className="space-y-1">
+                  <span className="block w-6 h-0.5 bg-gray-700"></span>
+                  <span className="block w-6 h-0.5 bg-gray-700"></span>
+                  <span className="block w-6 h-0.5 bg-gray-700"></span>
+                </div>
+              </Button>
+            </div>
           </div>
         </div>
+
+        {/* Mobile Navigation Panel */}
+        {isMobileMenuOpen && (
+          <div id="mobile-menu" className="md:hidden border-t px-4 pb-4">
+            <div className="flex flex-col gap-3 pt-4">
+              <a href="#" className="text-gray-700 hover:text-red-600 font-medium">Tin tức</a>
+              <a href="#" className="text-gray-700 hover:text-red-600 font-medium">Hoạt động Đảng bộ</a>
+              <a href="#" className="text-gray-700 hover:text-red-600 font-medium">Hội đồng nhân dân</a>
+              <a href="#" className="text-gray-700 hover:text-red-600 font-medium">Dịch vụ công</a>
+              <div className="relative mt-2">
+                <Input
+                  type="search"
+                  placeholder="Tìm kiếm..."
+                  className="w-full pr-10"
+                />
+                <Search className="absolute right-3 top-2.5 h-4 w-4 text-gray-400" />
+              </div>
+            </div>
+          </div>
+        )}
       </header>
     </>
   )

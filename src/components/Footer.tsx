@@ -107,11 +107,13 @@ export default function Footer() {
             <div className="flex items-center gap-4 text-gray-400 text-sm">
               <span>Được xây dựng bởi</span>
               <div className="flex items-center gap-2">
-                <img
-                  src="/AIDIGI_LOGO.png"
-                  alt="AIDIGI Logo"
-                  className="w-8 h-8"
-                />
+                <a href="https://trituesonhantao.com/" target="_blank" rel="noopener noreferrer" aria-label="AIDIGI Website">
+                  <img
+                    src="/AIDIGI_LOGO.png"
+                    alt="AIDIGI Logo"
+                    className="w-8 h-8"
+                  />
+                </a>
                 <span>Chính phủ điện tử Việt Nam</span>
               </div>
             </div>
