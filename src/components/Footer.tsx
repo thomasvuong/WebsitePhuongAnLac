@@ -13,7 +13,7 @@ export default function Footer() {
               <li><a href="#" className="hover:text-white transition-colors">Hoạt động Đảng bộ</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Hội đồng nhân dân</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Ủy ban nhân dân</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Dịch vụ công</a></li>
+              <li><a href="https://studio--studio-7574048319-6ecfd.us-central1.hosted.app/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Dịch vụ công</a></li>
             </ul>
           </div>
 

@@ -72,7 +72,7 @@ export default function Header() {
               <a href="#" className="text-gray-700 hover:text-red-600 font-medium">Tin tức</a>
               <a href="#" className="text-gray-700 hover:text-red-600 font-medium">Hoạt động Đảng bộ</a>
               <a href="#" className="text-gray-700 hover:text-red-600 font-medium">Hội đồng nhân dân</a>
-              <a href="#" className="text-gray-700 hover:text-red-600 font-medium">Dịch vụ công</a>
+              <a href="https://studio--studio-7574048319-6ecfd.us-central1.hosted.app/" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-red-600 font-medium">Dịch vụ công</a>
               <div className="relative">
                 <Input
                   type="search"
@@ -111,7 +111,7 @@ export default function Header() {
               <a href="#" className="text-gray-700 hover:text-red-600 font-medium">Tin tức</a>
               <a href="#" className="text-gray-700 hover:text-red-600 font-medium">Hoạt động Đảng bộ</a>
               <a href="#" className="text-gray-700 hover:text-red-600 font-medium">Hội đồng nhân dân</a>
-              <a href="#" className="text-gray-700 hover:text-red-600 font-medium">Dịch vụ công</a>
+              <a href="https://studio--studio-7574048319-6ecfd.us-central1.hosted.app/" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-red-600 font-medium">Dịch vụ công</a>
               <div className="relative mt-2">
                 <Input
                   type="search"

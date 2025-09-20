@@ -70,7 +70,7 @@ export default function Explainers() {
           </div>
 
           <div className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
-            <div className="text-sm text-blue-600 font-medium mb-2">Dịch vụ công</div>
+            <a href="https://studio--studio-7574048319-6ecfd.us-central1.hosted.app/" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 font-medium mb-2 hover:text-blue-800 transition-colors">Dịch vụ công</a>
             <h3 className="text-lg font-semibold mb-3">Hướng dẫn tiếp cận dịch vụ công trực tuyến</h3>
             <p className="text-gray-600 text-sm">
               Cách thức đăng ký và sử dụng các dịch vụ hành chính công trên nền tảng số.
